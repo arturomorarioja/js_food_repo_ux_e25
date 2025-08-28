@@ -1,0 +1,22 @@
+@import 'variables.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    font-family: var(--fontMain);
+
+    > header, > footer {
+        padding: 0.5rem 1rem;
+        text-align: center;
+        color: var(--colourBgComplementary);
+        background-color: var(--colourBgMain);
+    }
+
+    > header {
+        font-family: var(--fontTitle);
+    }
+}
