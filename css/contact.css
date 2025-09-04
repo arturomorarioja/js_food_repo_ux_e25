@@ -1,0 +1,38 @@
+@import 'styles.css';
+
+section.content {
+    margin-top: 1rem;
+}
+
+address {
+    text-indent: 1rem;
+
+    #postal-address {
+        margin-bottom: 0.5rem;
+    }
+}
+
+form {
+    div {
+        display: flex;
+        flex-flow: column nowrap;
+
+        margin-bottom: 0.5rem;
+
+        textarea {
+            height: 6rem;
+        }
+
+        button {
+            align-self: start;
+
+            border: none;
+            border-radius: 1rem;
+            padding: 0.25rem 2rem;
+            font-family: var(--fontMain);
+            font-size: 1rem;
+            color: var(--colourBgComplementary);
+            background-color: var(--colourBgMain);
+        }
+    }
+}
