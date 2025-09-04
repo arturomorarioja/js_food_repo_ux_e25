@@ -43,3 +43,9 @@ body {
         padding: 0.5rem 1rem;
     }
 }
+
+button {
+    color: var(--colourBgComplementary);
+    background-color: var(--colourBgMain);
+    border: none;
+}

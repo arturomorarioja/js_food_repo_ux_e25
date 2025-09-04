@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Food Repo</title>
     <link rel="stylesheet" href="css/contact.css">
+    <script src="js/form.js" type="module"></script>
 </head>
 <body>
     <header>
@@ -40,7 +41,7 @@
                 <header>
                     <h3>Contact us</h3>
                 </header>
-                <form>
+                <form id="frmContact">
                     <div>
                         <label for="txtFullName">Full name</label>
                         <input type="text" id="txtFullName" required>
@@ -67,5 +68,16 @@
     <footer>
         <p>&copy; 2025 EK Web Development</p>
     </footer>
+    <dialog id="mdlContact">
+        <header>
+            <h1>Message received</h1>
+            <button class="close">&times;</button>
+        </header>
+        <p>Thank you for your message.</p>
+        <p>Full name: <span id="form-full-name"></span></p>
+        <p>E-mail: <span id="form-email"></span></p>
+        <p>Phone number: <span id="form-phone-number"></span></p>
+        <p>Comments: <span id="form-comments"></span></p>
+    </dialog>
 </body>
 </html>

@@ -26,13 +26,34 @@ form {
         button {
             align-self: start;
 
-            border: none;
             border-radius: 1rem;
             padding: 0.25rem 2rem;
             font-family: var(--fontMain);
             font-size: 1rem;
-            color: var(--colourBgComplementary);
-            background-color: var(--colourBgMain);
+        }
+    }
+}
+
+dialog {
+    margin: 6rem auto;
+    border: 4px solid var(--colourBgMain);
+    border-radius: 1rem;
+    
+    > * {
+        padding: 0.5rem 1rem;
+    }
+
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        font-size: 0.7rem;
+        color: var(--colourBgComplementary);
+        background-color: var(--colourBgMain);
+        
+        button {
+            font-size: 1.2rem;
         }
     }
 }
