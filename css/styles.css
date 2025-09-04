@@ -19,4 +19,27 @@ body {
     > header {
         font-family: var(--fontTitle);
     }
+
+    nav {
+        background-color: var(--colourBgNav);
+        > ul {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            gap: 1rem;
+
+
+            list-style-type: none;
+
+            > li > a {
+                font-weight: bold;
+                text-decoration: none;
+                color: var(--colourBgComplementary);
+            }
+        }
+    }
+
+    main {
+        padding: 0.5rem 1rem;
+    }
 }
