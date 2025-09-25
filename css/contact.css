@@ -4,6 +4,17 @@ section.content {
     margin-top: 1rem;
 }
 
+@media (min-width: 650px) {
+    div:has(.content) {
+        display: flex;
+        flex-flow: row nowrap;
+
+        > .content {
+            flex: 1 0 50%;
+        }
+    }
+}
+
 address {
     text-indent: 1rem;
 
