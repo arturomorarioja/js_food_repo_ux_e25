@@ -44,10 +44,17 @@ body {
     main {
         padding: 0.5rem 1rem;
     }
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--colourBgMain);
+    }
 }
 
 button {
     color: var(--colourBgComplementary);
     background-color: var(--colourBgMain);
     border: none;
+    cursor: pointer;
 }
