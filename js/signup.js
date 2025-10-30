@@ -1,11 +1,5 @@
 import { USERS_BASE_URL } from './info.js';
-
-const showModal = (header, text) => {
-    const modal = document.querySelector('#mdlInfo');
-    modal.querySelector('h1').innerText = header;
-    modal.querySelector('p').innerText = text;
-    modal.showModal();
-};
+import { showModal } from './modal.js';
 
 document.querySelector('#frmSignup').addEventListener('submit', (e) => {
     e.preventDefault();
@@ -32,7 +26,7 @@ document.querySelector('#frmSignup').addEventListener('submit', (e) => {
         body: JSON.stringify(newUser)
     })
     .then(response => response.json())
-    .then(data => {
+    .then(data => { // eslint-disable-line no-unused-vars
         showModal('Signed up', 'The new user was created successfully.');
         e.target.reset();
     })
