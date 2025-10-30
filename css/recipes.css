@@ -2,8 +2,6 @@
 
 :root {
     --thumbnailDimension: 200px;
-
-    --colourBgCategory: #7F4F24;
 }
 
 #recipe-list {
@@ -27,19 +25,6 @@
             width: var(--thumbnailDimension);
             height: var(--thumbnailDimension);
             border-radius: 1rem;
-        }
-        
-        .recipe-attribute {
-            padding: 0 1rem;
-            border-radius: 1rem;
-            color: var(--colourBgComplementary);
-            
-            &.recipe-area {
-                background-color: var(--colourBgNav);
-            }
-            &.recipe-category {
-                background-color: var(--colourBgCategory);
-            }
-        }
+        }        
     }
 }

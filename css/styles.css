@@ -58,3 +58,19 @@ button {
     border: none;
     cursor: pointer;
 }
+
+.recipe-attribute {
+    display: inline-block;
+    width: auto;
+    
+    padding: 0 1rem;
+    border-radius: 1rem;
+    color: var(--colourBgComplementary);
+    
+    &.recipe-area {
+        background-color: var(--colourBgNav);
+    }
+    &.recipe-category {
+        background-color: var(--colourBgCategory);
+    }
+}
